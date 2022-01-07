@@ -1,0 +1,75 @@
+body {
+    margin: 50px;
+    box-sizing: border-box;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    color:rgb(4, 19, 61)
+}
+
+h2 {
+    font-size: 14px;
+    color:rgb(4, 19, 61)
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.maincard {
+    text-align: center;
+    background-color: wheat;
+    padding: 30px;
+    border-radius: 4px;
+    border: 3px solid rgb(218, 198, 140)
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    color: rgb(71, 108, 158)
+}
+
+a:hover {
+    color: rgb(58, 122, 69)
+  }
+
+.card {
+    text-align: center;
+    background-color: rgb(171, 201, 201);
+    padding: 30px;
+    border: 3px solid rgb(87, 123, 170);
+    border-radius: 4px;
+    margin: 40px;
+    color:rgb(4, 19, 61)
+}
+
+img {
+    border: 2px solid rgb(87, 123, 170);
+    border-radius: 4px;
+
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+p {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.showtime {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 30px
+}

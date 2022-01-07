@@ -15,6 +15,9 @@ const hbs = require('hbs');
 
 const app = express();
 
+app.set("view engine", "hbs");
+
+
 // ℹ️ This function is getting exported from the config folder. It runs most middlewares
 require('./config')(app);
 
@@ -27,6 +30,7 @@ app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
 // 👇 Start handling routes here
 const index = require('./routes/index');
 app.use('/', index);
+app.use('/movies', require('./routes/moviesRouter'))
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);

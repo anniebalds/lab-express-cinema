@@ -1,0 +1,22 @@
+<a href="/">Home</a>
+<a href="/movies">Return to All Movies</a>
+<div class='container'>
+    <div class='card'>
+        <p class='title'>{{movie.title}}</p>
+        <img src='{{movie.image}}' alt='{{movie.title}}'/>
+        <p>Director: {{movie.director}}</p>
+
+        <p>Starring:
+        {{#each movie.stars}}
+        <span>{{this}}</span>
+        {{/each}}
+        </p>
+
+        <p>Description: {{movie.description}}</p>
+
+        {{#each movie.showtimes}}
+        <span class='showtime'>{{this}}  </span>
+        {{/each}}
+
+    </div>
+</div>
